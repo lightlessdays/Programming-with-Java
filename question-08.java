@@ -24,14 +24,16 @@ public class Main extends Frame implements MouseListener {
     public static void main(String[] args) {
         new Main();
     }
-
+    
     @Override
     public void mouseClicked(MouseEvent e) {
         l.setText("Mouse Clicked");
+        setSize(900, 900);
     }
 
     @Override
     public void mousePressed(MouseEvent e) {
+        setSize(300, 300);
     }
 
     @Override
