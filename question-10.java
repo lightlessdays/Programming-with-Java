@@ -32,7 +32,7 @@ class AWTo implements ActionListener{
     @Override
     public void actionPerformed(ActionEvent e) {
         if(e.getSource()==red) frame.setBackground(Color.red);
-                else if(e.getSource()==blue) frame.setBackground(Color.blue);
+        else if(e.getSource()==blue) frame.setBackground(Color.blue);
         }
 
     }
