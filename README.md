@@ -43,3 +43,6 @@ label.
 12) Using	AWT,	write	a	program	to	create	two	buttons	labelled	‘A’	and	‘B’.	When	button	‘A’	
 is	pressed,	it	displays	your	personal	information	(Name,	Course,	Roll	No,	College)	and	
 when	button	‘B’	is	pressed,	it	displays	your	CGPA	in	previous	semester.	
+
+
+*Note: If you are running these files, please change the name of the file with main function to Main.java, else it might give an error.*
