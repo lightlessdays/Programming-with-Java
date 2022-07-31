@@ -1,52 +1,61 @@
-import java.util.Scanner;
+class Complex {
+    private int x;
+    private int y;
 
-public class Main{
-    static Complex addNumbers(Complex number1, Complex number2){
-        Complex number3=new Complex();
-        number3.x=number1.x+number2.x;
-        number3.y=number1.x+number2.y;
-        return number3;
+    /**
+     * Parameterized Constructor of Complex class
+     *
+     * @param real      Real Part
+     * @param imaginary Imaginary Part
+     */
+    public Complex(int real, int imaginary) {
+        this.x = real;
+        this.y = imaginary;
     }
 
-    static Complex multiplyNumbers(Complex number1,Complex number2){
-        Complex number3=new Complex();
-        int a=number1.x;
-        int b=number1.y;
-        int c=number2.x;
-        int d=number2.y;
-        number3.x=((a*c)-(b*d));
-        number3.y=((a*d)+(b*c));
-        return number3;
+    /**
+     * Add two Complex Objects
+     *
+     * @param o Complex Object
+     * @return Complex Object
+     */
+    public Complex add(Complex o) {
+        return new Complex(
+                this.x + o.x,
+                this.y + o.y);
     }
 
-    static String toString(Complex number){
-        return new String(number.x+"+"+number.y+"i");
+    /**
+     * Multiply two Complex Objects
+     *
+     * @param o Complex Object
+     * @return Complex Object
+     */
+    public Complex multiply(Complex o) {
+        return new Complex(
+                this.x * o.x - this.y * o.y,
+                this.x * o.y + o.x * this.y);
     }
 
-    public static void main(String[] args) {
-        Complex number1=new Complex();
-        Complex number2=new Complex();
-        Scanner input=new Scanner(System.in);
-        System.out.print("First number's real number:");
-        int x=input.nextInt();
-        System.out.print("First number's imaginary number:");
-        int y=input.nextInt();
-        number1.x=x;
-        number1.y=y;
-        System.out.print("Second number's real number:");
-        x=input.nextInt();
-        number2.x=x;
-        System.out.print("Second number's complex number:");
-        y=input.nextInt();
-        number2.y=y;
-        System.out.println("The sum of the numbers is "+toString(addNumbers(number1,number2)));
-        System.out.println("The product of the numbers is "+toString(multiplyNumbers(number1,number2)));
-        input.close();
+    /**
+     * Type Conversion to String
+     *
+     * @return String Representation
+     */
+    @Override
+    public String toString() {
+        return x + " + i " + y;
     }
-    
 }
 
-class Complex{
-    int x;
-    int y;
+/**** Main.java ****/
+public class Main {
+    public static void main(String[] args) {
+        Complex c1 = new Complex(1, 2);
+        Complex c2 = new Complex(3, 4);
+        System.out.println("Complex 1: " + c1);
+        System.out.println("Complex 2: " + c2);
+        System.out.println("Sum: " + c1.add(c2));
+        System.out.println("Product: " + c1.multiply(c2));
+    }
 }
