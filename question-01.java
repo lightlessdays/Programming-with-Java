@@ -10,8 +10,12 @@ public class Main{
 
     static Complex multiplyNumbers(Complex number1,Complex number2){
         Complex number3=new Complex();
-        number3.x=number1.x*number2.x;
-        number3.y=number1.y*number2.y;
+        int a=number1.x;
+        int b=number1.y;
+        int c=number2.x;
+        int d=number2.y;
+        number3.x=((a*c)-(b*d));
+        number3.y=((a*d)+(b*c));
         return number3;
     }
 
