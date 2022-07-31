@@ -43,4 +43,3 @@ label.
 12) Using	AWT,	write	a	program	to	create	two	buttons	labelled	‘A’	and	‘B’.	When	button	‘A’	
 is	pressed,	it	displays	your	personal	information	(Name,	Course,	Roll	No,	College)	and	
 when	button	‘B’	is	pressed,	it	displays	your	CGPA	in	previous	semester.	
-13) Rewrite	all	the	above	GUI programs	using	Swing.
