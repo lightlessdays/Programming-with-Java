@@ -1,4 +1,4 @@
-# Programming with Java
+# Programming in Java
 
 1) Design	a	class	Complex	having	a	real	part	(x)	and	an	imaginary	part	(y).	Provide	methods	
 to	perform	the	following	on	complex	numbers:	
@@ -46,3 +46,4 @@ when	button	‘B’	is	pressed,	it	displays	your	CGPA	in	previous	semester.
 
 
 *Note: If you are running these files, please change the name of the file with main function to Main.java, else it might give an error.*
+
